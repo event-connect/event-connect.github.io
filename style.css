@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@font-face {
+    font-family: Agrandir;
+    src: url(fonts/agrandir-grand-bold.ttf);
+}
+
+@font-face {
+    font-family: Codec;
+    src: url(fonts/codec.ttf);
+}
+  
+
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    max-width: 1920px;
+}
+
+header {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0 30px;
+}
+
+header #top-header nav {
+    flex: 2;
+}
+
+#top-header {
+    display: flex;
+    align-items: center;
+}
+
+#top-header > * {
+    flex: 1;
+    margin: 20px 10px;
+}
+
+header .main-title {
+    color: white;
+}
+
+.main-title {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.main-title * {
+    margin: 0;
+}
+
+.main-title img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.main-title h1 {
+    text-align: center;
+    font-size: 25.6px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.main-title h2 {
+    margin-top: 2px;
+    text-align: center;
+    font-size: 12.3px;
+    font-weight: normal;
+}
+
+#top-header > a {
+    text-align: right;
+}
+
+#header-connection {
+    text-align: right;
+}
+
+#header-connection button {
+    padding: 10px;
+    color: black;
+    background-color: #f51cda;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: Agrandir;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+#header-connection button:hover {
+    color: white;
+}
+
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+    margin: 0;
+}
+
+header ul li {
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+header ul a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 11.8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+header input{
+    text-align: left;
+    background-color: transparent;
+    border: solid 2px;
+    border-radius: 20px;
+    color: white;
+    border-color: #fff;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+header input::placeholder {
+    opacity: 1;
+    text-align: left;
+    color: white;
+}
+  
+div.search {
+    position: relative;
+}
+
+header div i {
+    position: absolute;
+    left: 8px;
+    color: #fff;
+    top: 8px;
+}
+
+main {
+    flex: 1 1 auto;
+    vertical-align: middle;
+    color: white;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 42.1px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#chat {
+    float: right;
+}
+
+#chat img {
+    width: 50px;
+    transition: transform 0.1s ease;
+}
+
+#chat img:hover {
+    transform: scale(110%);
+}
+
+#decouvrir {
+    margin: 20px;
+    text-align: center;
+}
+
+#decouvrir a {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 16.2px;
+    font-weight: bold;
+    font-family: Codec;
+    text-decoration: none;
+    background: linear-gradient(to left, #ff3c5f, #9340ff);
+    transition: box-shadow 0.2s ease;
+    /* display: inline-block; */
+}
+
+#decouvrir a:hover {
+  -webkit-box-shadow:inset 0px 0px 0px 10px #fff;
+  -moz-box-shadow:inset 0px 0px 0px 10px #fff;
+  box-shadow:inset 0px 0px 0px 3px #fff;
+}
+
+footer {
+    flex: 0 1 40px;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: solid 2px;
+    display: flex;
+    flex-direction: column;
+    border-color: #f51cda;
+    border-bottom: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+footer .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+footer .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer #infos {
+    flex: 2;
+}
+
+#infos nav {
+    display: flex;
+    justify-content: right;
+}
+
+#infos nav ul {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0;
+    margin-right: 50px;
+}
+
+#infos li {
+    margin-bottom: 5px;
+}
+
+#law ul {
+    display: flex;
+    list-style-type: none;
+    border-top: 1px solid black;
+    margin: 0 50px;
+    text-align: center;
+}
+
+#law ul li {
+    flex: 1;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+#infos a:hover, #law a:hover {
+    text-decoration: underline;
+}
+
+
+#infos div:not(:last-child) ul:after {
+    content:"";
+    position:absolute;
+    top:0;
+    right:-25px;
+    width:1px;
+    height: 50px;
+    background:#000;
+}
+
+#newsletter input, #newsletter input:focus {
+    text-align: left;
+    background-color: transparent;
+    border: solid 2px;
+    border-radius: 50px;
+    border-color: #e16ed2;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+#newsletter input::placeholder {
+    /* opacity: 1; */
+    text-align: left;
+    padding-left: 0px;
+}
+
+#newsletter input:focus {
+    outline: none;
+}
+
+#newsletter .search {
+    position: relative;
+}
+
+#newsletter a {
+    position: absolute;
+    color: white;
+    top: 5px;
+    right: -28px;
+    background-color: #e16ed2;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+footer select {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#foreground {
+    transition: background-color 0.3s ease;
+}
+
+#foreground.enabled {
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    background-color:#000;
+    opacity:0.3;
+    z-index: 1;
+}
+
+
+
+aside {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    padding: 60px 30px;
+    z-index: 2;
+    box-sizing: border-box;
+    font-family: Poppins;
+    right: -500px;
+    transition: right 0.3s ease;
+    box-shadow: -10px 0px 50px 10px #000000;
+}
+
+aside.enabled {
+    right: 0;
+}
+
+aside h3 {
+    font-size: 27px;
+    font-family: Ubuntu;
+}
+
+aside .back {
+    font-size: 13px;
+    font-family: Ubuntu;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+aside .back > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside .back:hover {
+    color: #cf17b8;
+}
+
+aside .back span {
+    margin-left: 5px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+aside label {
+    display: block;
+    margin: 5px 0;
+    font-size: 12;
+}
+
+aside input[type="text"], 
+aside input[type="password"],
+aside input[type="mail"] 
+{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+aside form .names {
+    display: flex;
+}
+
+aside form div div,
+aside form div:not(:first-child) {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+aside form div div:first-child {
+    margin-right: 10px;
+}
+
+aside form > div {
+    margin-bottom: 10px;
+}
+
+aside input[type="submit"] {
+    color: black;
+    background-color: #f51cda;
+    padding: 10px 30px;
+    font-size: 14px;
+    border: solid 1px black;
+    border-radius: 15px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+aside input[type="submit"]:hover {
+    color: white;
+}
+
+aside h4 {
+    text-align: center;
+    font-size: 14;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+aside h4::before, aside h4::after {
+    content: '';
+    width: 40%;
+    border-bottom: solid 1px black;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside p {
+    text-align: center;
+}
+
+aside .links {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+aside #forgot {
+    text-align: right;
+    color: black;
+    text-decoration: underline;
+    float: right;
+}
+
+aside #forgot:hover {
+    color: #cf17b8;
+}
+
+#connection > p button {
+    background: none;
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#connection > p button:hover {
+    color: #cf17b8;
+}
+
+
+.cards {
+    display: grid; /* 1 */
+    grid-template-columns: repeat(auto-fill, 350px); /* 2 */
+    grid-gap: 1rem; /* 3 */
+    justify-content: space-between; /* 4 */
+}
+
+
+.cards::after {
+    content: "";
+    flex: auto;
+  }
+
+.card {
+    background-color: #f51cda;
+    border: solid 2px #f51cda;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: scale 0.1s ease-out;
+
+    box-shadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card .content {
+    padding: 5px 10px;
+    font-family: Agrandir;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.card h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card span {
+    font-size: 12px;
+    font-family: "JetBrains Mono", monospace;
+    display: inline-block;
+    margin: 5px 0;
+    /* vertical-align: middle; */
+}
+
+.card span::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    margin-right: 5px;
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card .price::before {
+    content: '\f02b';
+}
+
+.card .date::before {
+    content: '\f073';
+}
+
+.card .location::before {
+    content: '\f3c5';
+}
+
+.card .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card .details > * {
+    flex-basis: 50%;
+}
+
+.card:hover {
+    scale: 105%;
+}
