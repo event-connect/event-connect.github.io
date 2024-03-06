@@ -13,6 +13,12 @@
 }
   
 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     display: flex;
     flex-flow: column;
@@ -22,13 +28,17 @@ body {
     max-width: 1920px;
 }
 
-body.event {
+body.event, body.category {
     background-color: #000;
     background-image: url(imgs/rose.png);
-    background-attachment: fixed;
-    background-position: center 60%;
+    /* background-attachment: scroll; */
+    background-position: center top;
     background-size: 1200px;
     background-repeat: no-repeat;
+}
+
+body.category {
+    max-width: 1800px;
 }
 
 header {
@@ -643,7 +653,15 @@ aside #forgot:hover {
     position: relative;
 }
 
-.event main .event-container::before {
+.card-row {
+    position: relative;
+
+    grid-gap: 5rem;
+    display: flex;
+    margin: 50px;
+}
+
+.event main .event-container::before, .card-row::before {
     content: "";
     width: 50vw;
     height: 100px;
@@ -656,7 +674,7 @@ aside #forgot:hover {
     box-shadow: rgba(0, 0, 0, 0.5) -50px 0px 36px -28px inset;
 }
 
-.event main .event-container::after {
+.event main .event-container::after, .card-row::after {
     content: "";
     width: 50vw;
     height: 100px;
@@ -771,4 +789,34 @@ aside #forgot:hover {
 
 .event .buy {
     text-align: center;
+}
+
+.page-numbers {
+    text-align: center;
+    user-select: none;
+
+}
+
+.page-number {
+
+    font-family: Poppins;
+    font-size: 14px;
+    border: solid 2px white;
+    color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 3px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+.page-number.selected {
+    background-color: #500e51;
 }
