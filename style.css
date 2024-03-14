@@ -89,14 +89,12 @@ header #top-header nav {
     margin: 20px 10px;
 }
 
-header .main-title {
-    color: white;
-}
-
-.main-title {
+.main-title a {
     font-family: "Ubuntu", sans-serif;
     display: flex;
     align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .main-title * {
