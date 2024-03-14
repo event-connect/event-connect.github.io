@@ -90,11 +90,15 @@ header #top-header nav {
 }
 
 .main-title a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.main-title, .main-title a {
     font-family: "Ubuntu", sans-serif;
     display: flex;
     align-items: center;
-    color: white;
-    text-decoration: none;
 }
 
 .main-title * {
@@ -735,7 +739,7 @@ aside #forgot:hover {
     margin: 10px 30px;
 }
 
-.event h1 {
+.event form h1 {
     text-transform: uppercase;
     font-family: Agrandir;
     font-size: 18px;
@@ -797,7 +801,7 @@ aside #forgot:hover {
     font-style: italic;
 }
 
-.event button {
+.event form button {
     font-size: 18.8px;
     font-weight: bold;
     border: none;
@@ -809,7 +813,7 @@ aside #forgot:hover {
     transition: background 0.1s ease;
 }
 
-.event button:hover {
+.event form button:hover {
     background-color: #faaaef;
 }
 
