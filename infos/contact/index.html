@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Connect</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
+    <script src="../../main.js"></script>
+</head>
+<body class="dark infos">
+    <div id="foreground" onclick="close_sidebar()"></div>
+    <header>
+        <section id="top-header">
+            <section class="main-title">
+                <img src="../../imgs/logo.png" alt="logo">
+                <div>
+                    <h1>Event Connect</h1>
+                    <h2>1 clic, 1000 événements</h2>
+                </div>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="/categories/musique/">Musique</a></li>
+                    <li><a href="/categories/culture/">Culture</a></li>
+                    <li><a href="/categories/sport/">Sport</a></li>
+                    <li><a href="/categories/festivites/">Festivités</a></li>
+                    <li><a href="/categories/famille/">Famille</a></li>
+                </ul>
+            </nav>
+            <section id="header-connection">
+                <button onclick="open_sidebar()">Connexion / Inscription</button>
+            </section>
+        </section>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="site-search" name="q" placeholder="Recherche" />
+        </div>
+        
+    </header>
+    <main>
+        <section class="breadcrumb">
+            <a href="/">Accueil</a>
+            <a href="#">Nous contacter</a>
+        </section>
+        <section class="contact">
+            <form action="">
+                <legend>Nous contacter</legend>
+                <div>
+                    <input type="text" name="" id="" placeholder="Nom*">
+                    <input type="text" name="" id="" placeholder="Prénom*">
+                </div>
+                <div>
+                    <input type="text" name="" id="" placeholder="E-mail*">
+                    <input type="text" name="" id="" placeholder="Téléphone*">
+                </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Quel est votre problème ?*"></textarea>
+                </div>
+                <div>
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <section class="top">
+            <section class="left">
+                <section class="main-title">
+                    <img src="../../imgs/logo.png" alt="logo">
+                    <div>
+                        <h1>Event Connect</h1>
+                        <h2>1 clic, 1000 événements</h2>
+                    </div>
+                </section>                
+                <section id="newsletter">
+                    <p>Ne loupez aucun événement en vous inscrivant à notre newsletter</p>
+                    <div class="search">
+                        <input type="mail" name="" id="" placeholder="Votre adresse e-mail">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
+            </section>
+            <section id="infos">
+                <nav>
+                    <div>
+                        <h3>À propos</h3>
+                        <ul>
+                            <li><a href="#">Notre histoire</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Réseaux Sociaux</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">TikTok</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </section>
+        <section id="law">
+            <nav>
+                <ul>
+                    <li><a href="/infos/conditions-d-utilisation/">Conditions d'utilisation</a></li>
+                    <li><a href="/infos/donnes-personnelles/">Politiques données personnelles</a></li>
+                    <li><a href="/infos/politique-cookies/">Politique cookies</a></li>
+                    <li>
+                        <select name="language" id="language">
+                            <option value="fr">🇫🇷&emsp;Français</option>
+                            <option value="en">🇺🇸&emsp;English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+    </footer>
+    <aside id="inscription" class="sidebar">
+        <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
+        <h3>S'inscrire</h3>
+        <form action="" method="post">
+            <div class = "names">
+                <div>
+                    <label for="inscription-surname">Nom</label>
+                    <input type="text" name="inscription-surname" id="inscription-surname" placeholder="Martin">
+                </div>
+                <div>
+                    <label for="inscription-name">Prénom</label>
+                    <input type="text" name="inscription-name" id="inscription-name" placeholder="Léa">
+                </div>
+            </div>
+            <div>
+                <label for="inscription-mail">E-mail</label>
+                <input type="mail" name="inscription-mail" id="inscription-mail" placeholder="hello@reallygreatsite.com">
+            </div>
+            <div>
+                <label for="inscription-password">Mot de passe</label>
+                <input type="password" name="inscription-password" id="inscription-password" placeholder="••••••••">
+            </div>
+            <div>
+                <input type="submit" value="S'inscrire">
+            </div>
+        </form>
+        <section class="alternate-connection">
+            <h4>Ou</h4>
+            <p>Continuez avec</p>
+            <div class="links">
+                <a href="#"><img src="../../imgs/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../../imgs/google.png" alt="Google"></a>
+                <a href="#"><img src="../../imgs/apple.png" alt="Apple"></a>
+                <a href="#"><img src="../../imgs/paypal.png" alt="Paypal"></a>
+            </div>
+        </section>
+    </aside>
+    <aside id="connection" class="sidebar">
+        <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
+        <h3>Me connecter</h3>
+        <form action="" method="post">
+            <div>
+                <label for="connect-mail">E-mail</label>
+                <input type="text" name="connect-mail" id="connect-mail" placeholder="hello@reallygreatsite.com">
+            </div>
+            <div>
+                <label for="connect-password">Mot de passe</label>
+                <input type="password" name="connect-password" id="connect-password" placeholder="••••••••">
+                <a href="#" id="forgot">Mot de passe oublié ?</a>
+            </div>
+            <div>
+                <input type="submit" value="Me connecter">
+            </div>
+        </form>
+        <section class="alternate-connection">
+            <h4>Ou</h4>
+            <p>Continuez avec</p>
+            <div class="links">
+                <a href="#"><img src="../../imgs/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../../imgs/google.png" alt="Google"></a>
+                <a href="#"><img src="../../imgs/apple.png" alt="Apple"></a>
+                <a href="#"><img src="../../imgs/paypal.png" alt="Paypal"></a>
+            </div>
+        </section>
+        <p>Pas encore de compte ?   <button onclick="connect()">S’inscrire</button></p>
+    </aside>
+</body>
+</html>
