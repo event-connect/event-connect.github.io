@@ -35,23 +35,43 @@ body {
     max-width: 1920px;
 }
 
-body:not(.dark) {
+body:not(.dark):not(.light) {
     background-image: url(imgs/background.jpg);
     background-size: cover;
 }
 
-body.dark {
-    background-color: #000;
-    /* background-image: url(imgs/rose.png); */
-    /* background-attachment: scroll; */
+body.light {
+    background-color: #fff;
     background-position: center top;
     background-size: 1200px;
     background-repeat: no-repeat;
 }
 
-body.dark::before {
-    content: '';
+body.dark {
     background-color: #000;
+    background-position: center top;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+}
+
+body.light header *, body.light .breadcrumb * {
+    color: black !important;
+}
+
+body.light header input::placeholder {
+    color: #000;
+}
+
+body.light header input {
+    border-color: #000;
+}
+
+body.dark::before {
+    background-color: #000;
+}
+
+body.dark::before, body.light::before {
+    content: '';
     background-image: url(imgs/rose.png);
     background-attachment: scroll;
     background-position: center top;
@@ -845,6 +865,14 @@ aside #forgot:hover {
     text-align: center;
 }
 
+body.light .page-number {
+    color: #000;
+    border-color: #000;
+}
+
+body.light .page-number.selected {
+    background-color: #ef43cf;
+}
 
 
 .page-number.selected {
