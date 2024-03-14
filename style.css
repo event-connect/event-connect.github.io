@@ -14,7 +14,7 @@
   
 
 
-html, body {
+html {
     overflow-x: hidden;
 }
 
@@ -655,7 +655,7 @@ aside #forgot:hover {
 .card-row {
     position: relative;
 
-    grid-gap: 5rem;
+    grid-gap: 3rem;
     display: flex;
     margin: 50px;
 }
@@ -684,6 +684,10 @@ aside #forgot:hover {
     left: 100%;
     z-index: -1;
     box-shadow: rgba(0, 0, 0, 0.5) 50px 0px 36px -28px inset;
+}
+
+.card-row:first-of-type{
+    margin-top: 90px;
 }
 
 
@@ -818,4 +822,50 @@ aside #forgot:hover {
 
 .page-number.selected {
     background-color: #500e51;
+}
+
+.breadcrumb {
+    display: inline-block;
+    border-bottom: 1px solid #b2a9b0;
+    margin-top: 20px;
+    padding-left: calc(80px + (100vw - 1800px) / 2);
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    .breadcrumb {
+        padding-left: 80px;
+    }
+}
+
+.breadcrumb a {
+    color: white;
+    /* margin-left: 10px; */
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 11.7px;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+
+.breadcrumb a:hover {
+    color:#cf17b8;
+}
+
+.breadcrumb a:not(:last-child)::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    color: white;
+    font-size: 15px;
+    content: '\f105';
+    margin-left: 10px;
+    margin-right: 5px;
+    pointer-events: none;
+    display: inline-block;
+    vertical-align: middle;
+    /* cursor:text; */
 }
