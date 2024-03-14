@@ -18,3 +18,16 @@ function close_sidebar() {
 function connect() {
     document.getElementById("connection").style.display = "none";
 }
+
+
+function collapse(event) {
+    var el = event.target;
+    console.log('oui')
+    el.classList.toggle("active");
+    var content = el.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+}
