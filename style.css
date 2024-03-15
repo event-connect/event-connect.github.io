@@ -159,28 +159,40 @@ header #top-header nav {
     text-align: right;
 }
 
-#header-connection {
+#header-profil {
     text-align: right;
 }
 
-#header-connection button {
+#header-profil button {
+    letter-spacing: 1px;
     padding: 10px;
     color: black;
     background-color: #f51cda;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
-    font-family: Agrandir;
+    font-family: Ubuntu;
     text-transform: uppercase;
     vertical-align: middle;
     display: inline-block;
     border: none;
     cursor: pointer;
+    line-height: 10px;
 }
 
-#header-connection button:hover {
+#header-profil button:hover {
     color: white;
+}
+
+#header-profil button::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    line-height: 10px;
+    font-size: 22px;
+    content: "\f007";
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 
@@ -891,6 +903,8 @@ body.light .page-number.selected {
 }
 
 .breadcrumb {
+    letter-spacing: 1px;
+
     display: inline-block;
     border-bottom: 1px solid #adacb8;
     margin-top: 20px;
