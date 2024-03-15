@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Connect</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="../../main.js"></script>
 </head>
-<body>
+<body class="dark compte">
     <div id="foreground" onclick="close_sidebar()"></div>
     <header>
         <section id="top-header">
             <section class="main-title">
-                <a href="">
-                    <img src="imgs/logo.png" alt="logo">
+                <a href="/">
+                    <img src="../../imgs/logo.png" alt="logo">
                     
                     <div>
                         <h1>Event Connect</h1>
@@ -42,59 +42,76 @@
         
     </header>
     <main>
-        <h2>Les prochains gros événements</h2>
-        <section class="cards">
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-
-
+        <section class="breadcrumb">
+            <a href="/">Accueil</a>
+            <a href="#">Mon profil</a>
+            <a href="#">Mon compte</a>
         </section>
-        <div id="decouvrir">
-            <a href="#">Découvrir</a>
+        <h1>Votre compte Event Connect</h1>
+        <div class="content">
+            <div class="coords">
+                <div class="infos-principales">
+                    <img src="../../imgs/photo.png" alt="">
+                    <div>
+                        <h2 class="nom">Martin Léa</h2>
+                        <p class="mail">martinlea@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Âge</h3>
+                    <p>22 ans</p>
+                </div>
+                <div>
+                    <h3>Centres d'intérêts</h3>
+                    <p>Musique, sport, bien-être</p>
+                </div>
+                <div>
+                    <h3>Adresse</h3>
+                    <p>
+                        Martin Léa <br>
+                        13 rue des Pins <br>
+                        57000 Metz <br>
+                        France
+                    </p>
+                </div>
+            </div>
+            <div class="reservations">
+                <h2>Vos dernières réservations</h2>
+                <div class="card-row no-rose">
+
+                    <a class="card" href="/event">
+                        <img src="../../imgs/background.jpg" alt="">
+                        <div class="content">
+                            <h1>
+                                Le roi lion <br>
+                                Comédie musicale
+                            </h1>
+                            <div class="details">
+                                <span class="date">12/03/2024</span>
+                                <span class="location">Paris</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="/event">
+                        <img src="../../imgs/background.jpg" alt="">
+                        <div class="content">
+                            <h1>PLK festival de Nîmes</h1>
+                            <div class="details">
+                                <span class="date">04/04/2024</span>
+                                <span class="location">Nantes</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div id="chat">
-            <a href="#"><img src="imgs/chat.png" alt="Discuter avec un chatbot"></a>
-        </div>
+
     </main>
     <footer>
         <section class="top">
             <section class="left">
                 <section class="main-title">
-                    <img src="imgs/logo.png" alt="logo">
+                    <img src="../../imgs/logo.png" alt="logo">
                     <div>
                         <h1>Event Connect</h1>
                         <h2>1 clic, 1000 événements</h2>
@@ -155,7 +172,7 @@
     </footer>
     <aside id="mon-profil" class="sidebar">
         <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <h1><img src="imgs/photo.png" alt="Photo de profil">Mon profil</h1>
+        <h1><img src="../../imgs/photo.png" alt="Photo de profil">Mon profil</h1>
         <nav>
             <ul>
                 <li><a href="/profil/compte" class="mon-compte">Mon compte</a></li>
@@ -166,4 +183,5 @@
         </nav>
         <button class="logout">Se déconnecter</button>
     </aside>
-    
+</body>
+</html>

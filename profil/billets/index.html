@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Connect</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="../../main.js"></script>
 </head>
-<body>
+<body class="dark billets">
     <div id="foreground" onclick="close_sidebar()"></div>
     <header>
         <section id="top-header">
             <section class="main-title">
-                <a href="">
-                    <img src="imgs/logo.png" alt="logo">
+                <a href="/">
+                    <img src="../../imgs/logo.png" alt="logo">
                     
                     <div>
                         <h1>Event Connect</h1>
@@ -42,59 +42,63 @@
         
     </header>
     <main>
-        <h2>Les prochains gros événements</h2>
-        <section class="cards">
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-            <a class="card" href="/event">
-                <img src="imgs/background.jpg" alt="">
-                <div class="content">
-                    <h1>Jeux olympiques 2024</h1>
-                    <div class="details">
-                        <span class="price">À partir de 24€</span>
-                        <span class="date">Du 26/07 au 11/08</span>
-                        <span></span>
-                        <span class="location">Paris</span>
-                    </div>
-                </div>
-            </a>
-
-
+        <section class="breadcrumb">
+            <a href="/">Accueil</a>
+            <a href="#">Mon profil</a>
+            <a href="#">Mes billets</a>
         </section>
-        <div id="decouvrir">
-            <a href="#">Découvrir</a>
+        <h1>Mes billets</h1>
+        <div class="content">
+            <div>
+                <a>Télécharger</a>
+                <div class="billet">
+                    <img src="../../imgs/event.jpg" alt="">
+                    <div class="content">
+                        <h2>
+                            Olivia Rodrigo <br>
+                            World Tour 2024
+                        </h2>
+                        <p class="horaire">Samedi 15 novembre 2024 à 20h00</p>
+                        <p class="place">
+                            Entrée fosse <br>
+                            Fosse debout
+                        </p>
+                        <p class="loc">Localisation : <i>Accor Arena à Paris</i></p>
+                        <p class="prix">Prix: 67,50€</p>
+                        <p class="description">Description : Olivia Rodrigo est de retour avec son « GUTS WORLD TOUR » ! Avec son nouvel album, elle va enflammer les scènes à travers le mo,de en 2024 ! Ne manquez pas cette expérience musicale unique ! 🎶</p>
+                        <img src="../../imgs/qrcode.png" alt="" class="qr">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a>Télécharger</a>
+                <div class="billet">
+                    <img src="../../imgs/event.jpg" alt="">
+                    <div class="content">
+                        <h2>
+                            Olivia Rodrigo <br>
+                            World Tour 2024
+                        </h2>
+                        <p class="horaire">Samedi 15 novembre 2024 à 20h00</p>
+                        <p class="place">
+                            Entrée fosse <br>
+                            Fosse debout
+                        </p>
+                        <p class="loc">Localisation : <i>Accor Arena à Paris</i></p>
+                        <p class="prix">Prix: 67,50€</p>
+                        <p class="description">Description : Olivia Rodrigo est de retour avec son « GUTS WORLD TOUR » ! Avec son nouvel album, elle va enflammer les scènes à travers le mo,de en 2024 ! Ne manquez pas cette expérience musicale unique ! 🎶</p>
+                        <img src="../../imgs/qrcode.png" alt="" class="qr">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="chat">
-            <a href="#"><img src="imgs/chat.png" alt="Discuter avec un chatbot"></a>
-        </div>
+
     </main>
     <footer>
         <section class="top">
             <section class="left">
                 <section class="main-title">
-                    <img src="imgs/logo.png" alt="logo">
+                    <img src="../../imgs/logo.png" alt="logo">
                     <div>
                         <h1>Event Connect</h1>
                         <h2>1 clic, 1000 événements</h2>
@@ -155,7 +159,7 @@
     </footer>
     <aside id="mon-profil" class="sidebar">
         <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <h1><img src="imgs/photo.png" alt="Photo de profil">Mon profil</h1>
+        <h1><img src="../../imgs/photo.png" alt="Photo de profil">Mon profil</h1>
         <nav>
             <ul>
                 <li><a href="/profil/compte" class="mon-compte">Mon compte</a></li>
@@ -166,4 +170,5 @@
         </nav>
         <button class="logout">Se déconnecter</button>
     </aside>
-    
+</body>
+</html>

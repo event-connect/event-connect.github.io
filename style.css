@@ -734,7 +734,7 @@ aside #forgot:hover {
     margin: 50px;
 }
 
-.event main .event-container::before, .card-row::before {
+.event main .event-container::before, .card-row:not(.no-rose):before {
     content: "";
     width: 50vw;
     height: 100px;
@@ -747,7 +747,7 @@ aside #forgot:hover {
     box-shadow: rgba(0, 0, 0, 0.5) -50px 0px 36px -28px inset;
 }
 
-.event main .event-container::after, .card-row::after {
+.event main .event-container::after, .card-row:not(.no-rose):after {
     content: "";
     width: 50vw;
     height: 100px;
@@ -1255,4 +1255,196 @@ main .faq .left h1 {
     width: 30px;
     text-align: center;
     content: "\f05e";
+}
+
+.compte main h1 {
+    margin-bottom: 50px;
+}
+
+.compte main > h1, .compte main h2 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.compte main h2 {
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+}
+
+.compte .card-row {
+    grid-gap: 5rem;
+}
+
+.compte .card h1 {
+    margin-bottom: 0;
+}
+
+.compte main > .content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.compte main > .content .coords {
+    flex: 1;
+    margin-left: 100px;
+}
+
+.compte main > .content .reservations {
+    flex: 2;
+    border-left: 1px solid white;
+    padding-left: 50px;
+}
+
+
+.compte main > .content .reservations .card-row {
+    margin: 0;
+    margin-top: 45px;
+}
+
+.compte main h3 {
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.compte main p {
+    margin-top: 5px;
+    font-family: Ubuntu;
+    font-size: 17px;
+}
+
+.compte main {
+    margin-bottom: 50px;
+}
+
+.compte .content .infos-principales {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.compte .content .coords img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.compte .content .coords > div:not(.infos-principales) {
+    margin-left: 10px;
+}
+
+.compte {
+    max-width: 1500px;
+}
+
+.billets main > h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.billets main > .content {
+    display: flex;
+    grid-gap: 2rem;
+}
+
+.billets main > .content > div {
+    flex: 1;
+}
+
+.billets main > .content .billet {
+    display: flex;
+    background-color: #f51cda;
+    border-radius: 30px;
+    color: #000;
+    padding: 20px;
+    /* min-height: 20vw; */
+    overflow-y: auto;
+    margin-top: 20px;
+    background-image: url(imgs/bar.png);
+    background-position: 97% 12%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+.billets main > .content .billet .content {
+    margin-left: 20px;
+}
+
+.billets main > .content .billet img:first-child {
+    border-radius: 10px;
+    width: 17vw;
+    /* height: 400px; */
+    text-align: center;
+    object-fit: cover;
+}
+
+.billets main > .content .billet h2 {
+    font-family: Agrandir;
+    font-size: 1vw;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.billets main > .content .billet .horaire {
+    font-family: Ubuntu;
+    font-size: 0.8vw;
+    border: 2px solid black;
+    font-weight: bold;
+    background-color: #f867e6;
+    border-radius: 2px;
+    padding: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.billets main > .content .billet .place {
+    text-align: center;
+    font-family: Agrandir;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.billets main > .content .billet .description {
+    font-family: Poppins;
+    font-size: 0.8vw;
+    font-style: italic;
+    text-align: justify;
+}
+
+.billets main > .content .billet .loc,
+.billets main > .content .billet .prix {
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin: 0;
+}
+
+.billets main > .content .billet .qr {
+    width: 50px;
+}
+
+
+.billets main {
+    margin-bottom: 50px;
+}
+
+.billets main > .content a {
+    font-size: 14px;
+    font-family: Poppins;
+    color: black;
+    background-color: #8f8f8f;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5px;
 }
