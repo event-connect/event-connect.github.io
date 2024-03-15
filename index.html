@@ -153,71 +153,17 @@
         </section>
         
     </footer>
-    <aside id="inscription" class="sidebar">
+    <aside id="mon-profil" class="sidebar">
         <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <h3>S'inscrire</h3>
-        <form action="" method="post">
-            <div class = "names">
-                <div>
-                    <label for="inscription-surname">Nom</label>
-                    <input type="text" name="inscription-surname" id="inscription-surname" placeholder="Martin">
-                </div>
-                <div>
-                    <label for="inscription-name">Prénom</label>
-                    <input type="text" name="inscription-name" id="inscription-name" placeholder="Léa">
-                </div>
-            </div>
-            <div>
-                <label for="inscription-mail">E-mail</label>
-                <input type="mail" name="inscription-mail" id="inscription-mail" placeholder="hello@reallygreatsite.com">
-            </div>
-            <div>
-                <label for="inscription-password">Mot de passe</label>
-                <input type="password" name="inscription-password" id="inscription-password" placeholder="••••••••">
-            </div>
-            <div>
-                <input type="submit" value="S'inscrire">
-            </div>
-        </form>
-        <section class="alternate-connection">
-            <h4>Ou</h4>
-            <p>Continuez avec</p>
-            <div class="links">
-                <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="imgs/google.png" alt="Google"></a>
-                <a href="#"><img src="imgs/apple.png" alt="Apple"></a>
-                <a href="#"><img src="imgs/paypal.png" alt="Paypal"></a>
-            </div>
-        </section>
+        <h1><img src="imgs/photo.png" alt="Photo de profil">Mon profil</h1>
+        <nav>
+            <ul>
+                <li><a href="" class="mon-compte">Mon compte</a></li>
+                <li><a href="" class="mes-favoris">Mes favoris</a></li>
+                <li><a href="" class="mes-billets">Mes billets</a></li>
+                <li><a href="" class="mes-contacts">Mes contacts</a></li>
+            </ul>
+        </nav>
+        <button class="logout">Se déconnecter</button>
     </aside>
-    <aside id="connection" class="sidebar">
-        <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <h3>Me connecter</h3>
-        <form action="" method="post">
-            <div>
-                <label for="connect-mail">E-mail</label>
-                <input type="text" name="connect-mail" id="connect-mail" placeholder="hello@reallygreatsite.com">
-            </div>
-            <div>
-                <label for="connect-password">Mot de passe</label>
-                <input type="password" name="connect-password" id="connect-password" placeholder="••••••••">
-                <a href="#" id="forgot">Mot de passe oublié ?</a>
-            </div>
-            <div>
-                <input type="submit" value="Me connecter">
-            </div>
-        </form>
-        <section class="alternate-connection">
-            <h4>Ou</h4>
-            <p>Continuez avec</p>
-            <div class="links">
-                <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="imgs/google.png" alt="Google"></a>
-                <a href="#"><img src="imgs/apple.png" alt="Apple"></a>
-                <a href="#"><img src="imgs/paypal.png" alt="Paypal"></a>
-            </div>
-        </section>
-        <p>Pas encore de compte ?   <button onclick="connect()">S’inscrire</button></p>
-    </aside>
-</body>
-</html>
+    

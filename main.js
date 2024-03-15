@@ -1,5 +1,5 @@
 function open_sidebar() {
-    document.getElementById("connection").style.display = "block";
+    document.getElementById("mon-profil").style.display = "block";
     document.getElementById("foreground").className = "enabled";
     var elements = document.getElementsByClassName("sidebar")
     for(var index=0;index < elements.length;index++){
@@ -7,7 +7,7 @@ function open_sidebar() {
     }
 }
 function close_sidebar() {
-    document.getElementById("connection").style.display = "block";
+    document.getElementById("mon-profil").style.display = "block";
     document.getElementById("foreground").className = "";
     var elements = document.getElementsByClassName("sidebar")
     for(var index=0;index < elements.length;index++){
@@ -16,7 +16,7 @@ function close_sidebar() {
 }
 
 function connect() {
-    document.getElementById("connection").style.display = "none";
+    document.getElementById("mon-profil").style.display = "none";
 }
 
 
