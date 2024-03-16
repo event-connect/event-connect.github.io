@@ -1732,7 +1732,6 @@ body.contacts .messages section {
 
 body.contacts .messages {
     display: none;
-    margin-top: 90px;
 }
 
 body.contacts .messages > section > ul {
@@ -1866,7 +1865,7 @@ body.contacts .messages .buttons button {
 body.contacts .messages .text {
     display: flex;
     scrollbar-color: #9340ff #9340ff;
-    height: 500px;
+    height: 580px;
     overflow-y: scroll;
     flex-direction: column-reverse
 }
@@ -1956,4 +1955,22 @@ body.contacts .messages .bottom button {
 body.contacts .messages .bottom {
     display: flex;
     margin-right: 40px;
+}
+
+body.contacts .partage {
+    display: inline-block;
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #f51cda;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
