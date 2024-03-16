@@ -31,3 +31,19 @@ function collapse(event) {
         content.style.maxHeight = content.scrollHeight + "px";
       } 
 }
+
+function select_match() {
+    var match = document.getElementsByClassName("matchs")[0]
+    var messages = document.getElementsByClassName("messages")[0]
+    
+    match.style.display = "flex"
+    messages.style.display = "none"
+}
+
+function select_messages() {
+    var match = document.getElementsByClassName("matchs")[0]
+    var messages = document.getElementsByClassName("messages")[0]
+    
+    match.style.display = "none"
+    messages.style.display = "flex"
+}

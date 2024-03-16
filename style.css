@@ -1421,11 +1421,35 @@ main .faq .left h1 {
     text-align: justify;
 }
 
+.billets main > .content .billet .loc::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    margin-right: 5px;
+    color: #fbabf1;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '\f3c5';
+
+}
+
+.billets main > .content .billet .prix::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    margin-right: 5px;
+    color: #fbabf1;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '\f02b';
+}
+
 .billets main > .content .billet .loc,
 .billets main > .content .billet .prix {
     font-size: 0.9vw;
     font-family: Poppins;
     margin: 0;
+    margin-top: 5px;
 }
 
 .billets main > .content .billet .qr {
@@ -1447,4 +1471,487 @@ main .faq .left h1 {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 5px;
+}
+
+body.contacts .matchs .list {
+    flex: 1.3;
+}
+
+body.contacts .matchs .details {
+    flex: 1;
+}
+
+body.contacts .matchs .list {
+    border-right: 1px white solid;
+}
+
+body.contacts .matchs {
+    display: flex;
+}
+
+body.contacts .matchs .select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 50px;
+}
+
+body.contacts .matchs .search,
+body.contacts .messages .search
+{
+    display: flex;
+    background-color: #f51cda;
+    padding: 10px 40px;
+    justify-content: space-between;
+}
+
+body.contacts .matchs .search img,
+body.contacts .messages .search img {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+body.contacts .matchs .search h1,
+body.contacts .messages .search h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+body.contacts .matchs .search input,
+body.contacts .messages .search input {
+    text-align: left;
+    background-color: transparent;
+    border: solid 2px;
+    border-radius: 20px;
+    color: white;
+    border-color: #fff;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+body.contacts .matchs .search input::placeholder,
+body.contacts .messages .search input::placeholder {
+    opacity: 1;
+}
+
+body.contacts .matchs .search i,
+body.contacts .messages .search i {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+body.contacts main {
+    padding: 0;
+}
+
+body.contacts .matchs .switch ul,
+body.contacts .messages .switch ul {
+    display: flex;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+body.contacts .matchs .switch ul button,
+body.contacts .messages .switch ul button {
+    background: none;
+    color: white;
+    border: none;
+    font-family: Ubuntu;
+    font-size: 17.9px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+}
+
+body.contacts .matchs .switch ul button.selected,
+body.contacts .messages .switch ul button.selected {
+    border-bottom: solid 3px #f51cda;
+}
+
+body.contacts .details .profil {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+body.contacts .details .profil-card {
+    background-color: #6f0e66;
+    font-family: Ubuntu;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 300px;
+    opacity: 0.9;
+}
+
+body.contacts .details .profil-card > div img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: solid 5px #f51cda;box-sizing: border-box;
+}
+
+
+body.contacts .details .interact {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+body.contacts .details .interact button {
+    color: white;
+    background: linear-gradient(to right, #ff3c5f, #9340ff);
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px;
+    margin-top: 0;
+}
+
+body.contacts .details .profil-card > div {
+    position: relative;
+}
+
+body.contacts .details .profil-card > div h1 {
+    text-align: center;
+    margin: 0;
+    margin-top: -50px;
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.contacts .details .profil-card section {
+    padding: 5px 20px;
+}
+
+body.contacts .details .profil-card h2 {
+    font-size: 12px;
+}
+
+body.contacts .details .profil-card span {
+    background-color: #f51cda;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+body.contacts .details .profil > button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    padding: 30px;
+}
+
+body.contacts .details .buttons button {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: #f51cda;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+body.contacts .matchs .match {
+    text-align: center;
+}
+
+body.contacts .matchs .match img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+body.contacts .matchs .match h2 {
+    text-align: center;
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+body.contacts .matchs .match p {
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: 12px;
+}
+
+
+body.contacts .details .profil-card .likes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+body.contacts .details .profil-card .likes img {
+    flex: 1;
+    width: 50px;
+    height: 20px;
+    object-fit: cover;
+}
+
+body.contacts .details .profil-card .likes img:first-child {
+    object-position: top;
+}
+
+body.contacts .messages {
+    display: flex;
+}
+
+body.contacts .messages section {
+    flex: 1;
+}
+
+body.contacts .messages {
+    display: none;
+    margin-top: 90px;
+}
+
+body.contacts .messages > section > ul {
+    padding-left: 50px;
+    list-style-type: none;
+}
+
+body.contacts .messages > section > ul li {
+    display: flex;
+    margin: 20px;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+}
+
+body.contacts .messages > section > ul li > * {
+    margin: auto 0;
+}
+
+body.contacts .messages > section > ul img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+body.contacts .messages > section > ul li > div {
+    display: inline;
+}
+body.contacts .messages > section > ul h2 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Ubuntu;
+}
+
+body.contacts .messages > section > ul p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.5;
+    font-family: Ubuntu;
+    letter-spacing: 2px;
+}
+
+body.contacts .messages > section > ul i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.contacts .messages > section > ul li:hover {
+    background-color: rgb(65, 65, 65);
+    border-radius: 20px;
+}
+
+body.contacts .messages > section:first-child {
+    /* margin-right: 10px; */
+    border-right: 1px white solid;
+    flex: 1.3;
+}
+
+body.contacts .messages .top {
+    display: flex;
+    padding: 20px 30px;
+    border-bottom: 1px solid white;
+}
+
+body.contacts .messages .top > i{
+    margin: auto 0;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+body.contacts .messages .top img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+body.contacts .messages .top .call {
+    margin: auto 0;
+    margin-left: auto;
+}
+
+body.contacts .messages .top .name {
+    margin: auto 0;
+}
+
+body.contacts .messages .top .name h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+body.contacts .messages .top .name p {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+body.contacts .messages .top .call i {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+body.contacts .messages .buttons button {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: #f51cda;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+body.contacts .messages .text {
+    display: flex;
+    scrollbar-color: #9340ff #9340ff;
+    height: 500px;
+    overflow-y: scroll;
+    flex-direction: column-reverse
+}
+
+body.contacts .messages .text > div {
+    padding: 30px 50px;
+    flex-direction: column;
+    margin-right: 10px;
+    scrollbar-width:auto;
+}
+
+body.contacts .messages .text .date {
+    font-family: Ubuntu;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body.contacts .messages .text .me {
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to right, #ff3c5f, #9340ff);
+    padding: 10px 20px;
+    border-radius: 50px;
+    max-width: 300px;
+    margin-left: auto;
+}
+
+body.contacts .messages .text .they {
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    max-width: 300px;
+    margin-right: auto;
+}
+
+body.contacts .messages .send {
+    background-color: #464646;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+body.contacts .messages .send {
+    display: flex;
+    flex-grow:2;
+
+}
+
+body.contacts .messages .send input {
+    background: none;
+    border: none;
+    color: white;
+    flex-grow:2;
+    display: inline-block;
+    outline: none;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+body.contacts .messages .send i {
+    color: white;
+    margin: auto 0;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.contacts .messages .bottom button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+body.contacts .messages .bottom {
+    display: flex;
+    margin-right: 40px;
 }

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Connect</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
+    <script src="../../main.js"></script>
+</head>
+<body class="dark contacts">
+    <div id="foreground" onclick="close_sidebar()"></div>
+    <header>
+        <section id="top-header">
+            <section class="main-title">
+                <a href="/">
+                    <img src="../../imgs/logo.png" alt="logo">
+                    
+                    <div>
+                        <h1>Event Connect</h1>
+                        <h2>1 clic, 1000 événements</h2>
+                    </div>
+                </a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="/categories/musique/">Musique</a></li>
+                    <li><a href="/categories/culture/">Culture</a></li>
+                    <li><a href="/categories/sport/">Sport</a></li>
+                    <li><a href="/categories/festivites/">Festivités</a></li>
+                    <li><a href="/categories/famille/">Famille</a></li>
+                </ul>
+            </nav>
+            <section id="header-profil">
+                <button onclick="open_sidebar()">Profil</button>
+            </section>
+        </section>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="site-search" name="q" placeholder="Recherche" />
+        </div>
+        
+    </header>
+    <main>
+        <section class="breadcrumb">
+            <a href="/">Accueil</a>
+            <a href="#">Mon profil</a>
+            <a href="#">Mes contacts</a>
+        </section>
+        <section class="matchs">
+            <section class="list">
+                <div class="search">
+                    <div>
+                        <img src="../../imgs/photo.png" alt="">
+                        <h1>Léa Martin</h1>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="site-search" name="q" placeholder="Recherche" />
+                    </div>
+                </div>
+                <div class="switch">
+                    <nav>
+                        <ul>
+                            <li><button class="selected">Matchs</button></li>
+                            <li><button onclick="select_messages()">Messages</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="select">
+                    <div class="match">
+                        <img src="../../imgs/contacts/louise.jpg" alt="">
+                        <h2>Louise</h2>
+                        <p>Vous avez 3 événements en commun</p>
+                    </div>
+                    <div class="match">
+                        <img src="../../imgs/contacts/lucas.jpg" alt="">
+                        <h2>Lucas</h2>
+                        <p>Vous avez 1 événements en commun</p>
+                    </div>
+                    <div class="match">
+                        <img src="../../imgs/contacts/maria.jpg" alt="">
+                        <h2>Maria</h2>
+                        <p>Vous partagez des centres d'intérêt</p>
+                    </div>
+                    <div class="match">
+                        <img src="../../imgs/contacts/thomas.jpg" alt="">
+                        <h2>Thomas</h2>
+                        <p>Vous habitez dans la même ville</p>
+                    </div>
+                    <div class="match">
+                        <img src="../../imgs/contacts/alex.jpg" alt="">
+                        <h2>Alex</h2>
+                        <p>Vous habitez dans la même ville</p>
+                    </div>
+                    <div class="match">
+                        <img src="../../imgs/contacts/romain.jpg" alt="">
+                        <h2>Romain</h2>
+                        <p>Vous habitez dans la même ville</p>
+                    </div>
+                </div>
+            </section>
+            <section class="details">
+                <div class="buttons">
+                    <button>Messages</button>
+                    <button>Partage</button>
+                </div>
+                <div class="profil">
+                    <button><i class="fa-solid fa-angle-left"></i></button>
+                    <div>
+                        <div class="profil-card">
+                            <div>
+                                <img src="../../imgs/contacts/jade.png" alt="">
+                                <h1>Jade 22</h1>
+                            </div>
+                            <section>
+                                <h2>Centres d'intérêt</h2>
+                                <span>Tennis</span>
+                                <span>Musique</span>
+                                <span>Voyage</span>
+                                <h2>Aime</h2>
+                                <div class="likes">
+                                    <img src="../../imgs/contacts/roland-garos.jpg" alt="">
+                                    <img src="../../imgs/contacts/plk.jpg" alt="">
+                                    <img src="../../imgs/contacts/rock.jpg" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="interact">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                    <button><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </section>
+        </section>
+        <section class="messages">
+            <section>
+                <div class="search">
+                    <div>
+                        <img src="../../imgs/photo.png" alt="">
+                        <h1>Léa Martin</h1>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="site-search" name="q" placeholder="Recherche" />
+                    </div>
+                </div>
+                <div class="switch">
+                    <nav>
+                        <ul>
+                            <li><button onclick="select_match()">Matchs</button></li>
+                            <li><button class="selected">Messages</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul>
+                    <li>
+                        <img src="../../imgs/contacts/louise.jpg" alt="">
+                        <div>
+                            <h2>Louise</h2>
+                            <p>Ouvert il y a 39min</p>
+                        </div>
+                        <i class="fa-solid fa-camera"></i>
+                    </li>
+                    <li>
+                        <img src="../../imgs/contacts/thomas.jpg" alt="">
+                        <div>
+                            <h2>Thomas</h2>
+                            <p>Vu il y a 2h</p>
+                        </div>
+                        <i class="fa-solid fa-camera"></i>
+                    </li>
+                    <li>
+                        <img src="../../imgs/contacts/maria.jpg" alt="">
+                        <div>
+                            <h2>Maria</h2>
+                            <p>Vu il y a 3h</p>
+                        </div>
+                        <i class="fa-solid fa-camera"></i>
+                    </li>
+                    <li>
+                        <img src="../../imgs/contacts/alex.jpg" alt="">
+                        <div>
+                            <h2>Alex</h2>
+                            <p>Remis il y a 4h</p>
+                        </div>
+                        <i class="fa-solid fa-camera"></i>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="buttons">
+                    <button>Messages</button>
+                    <button>Partage</button>
+                </div>
+                <section class="conv">
+                    <div class="top">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <img src="../../imgs/contacts/louise.jpg" alt="">
+                        <div class="name">
+                            <h2>Louise</h2>
+                            <p>louise.alt</p>
+                        </div>
+                        <div class="call">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div>
+                            <p class="date">Aujourd'hui, à 13h12</p>
+                            <p class="me">Trop cool ! T’as pris tes places pour Olivia Rodrigo ? 😃</p>
+                            <p class="they">Oui je viens de les prendre :)</p>
+                            <p class="me">Ça va être trop bien haha</p>
+                            <p class="me">On se rejoint avant si tu veux ?</p>
+                            <p class="they">Ouiiii ! 😊</p>
+                            <p class="they">Pour 18h ça te va ? comme ça on ne sera pas trop derrière</p>
+                            <p class="me">Parfait 😜</p>
+                            <p class="they">J’ai trop hâte 🥳</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="send">
+                            <input type="text" name="" id="" placeholder="Aa">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <button>😀</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <section class="top">
+            <section class="left">
+                <section class="main-title">
+                    <img src="../../imgs/logo.png" alt="logo">
+                    <div>
+                        <h1>Event Connect</h1>
+                        <h2>1 clic, 1000 événements</h2>
+                    </div>
+                </section>                
+                <section id="newsletter">
+                    <p>Ne loupez aucun événement en vous inscrivant à notre newsletter</p>
+                    <div class="search">
+                        <input type="mail" name="" id="" placeholder="Votre adresse e-mail">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
+            </section>
+            <section id="infos">
+                <nav>
+                    <div>
+                        <h3>À propos</h3>
+                        <ul>
+                            <li><a href="/infos/notre-histoire/">Notre histoire</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="/infos/contact/">Nous contacter</a></li>
+                            <li><a href="/infos/faq/">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Réseaux Sociaux</h3>
+                        <ul>
+                            <li><a>Facebook</a></li>
+                            <li><a>Instagram</a></li>
+                            <li><a>TikTok</a></li>
+                            <li><a>YouTube</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </section>
+        <section id="law">
+            <nav>
+                <ul>
+                    <li><a href="/infos/conditions-d-utilisation/">Conditions d'utilisation</a></li>
+                    <li><a href="/infos/donnes-personnelles/">Politiques données personnelles</a></li>
+                    <li><a href="/infos/politique-cookies/">Politique cookies</a></li>
+                    <li>
+                        <select name="language" id="language">
+                            <option value="fr">🇫🇷&emsp;Français</option>
+                            <option value="en">🇺🇸&emsp;English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+    </footer>
+    <aside id="mon-profil" class="sidebar">
+        <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
+        <h1><img src="../../imgs/photo.png" alt="Photo de profil">Mon profil</h1>
+        <nav>
+            <ul>
+                <li><a href="/profil/compte" class="mon-compte">Mon compte</a></li>
+                <li><a href="/profil/favoris" class="mes-favoris">Mes favoris</a></li>
+                <li><a href="/profil/billets" class="mes-billets">Mes billets</a></li>
+                <li><a href="/profil/contacts" class="mes-contacts">Mes contacts</a></li>
+            </ul>
+        </nav>
+        <button class="logout">Se déconnecter</button>
+    </aside>
+</body>
+</html>
