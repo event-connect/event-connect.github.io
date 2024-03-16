@@ -1876,6 +1876,7 @@ body.contacts .messages .text > div {
     flex-direction: column;
     margin-right: 10px;
     scrollbar-width:auto;
+    display: flex;
 }
 
 body.contacts .messages .text .date {
@@ -1897,6 +1898,7 @@ body.contacts .messages .text .me {
     border-radius: 50px;
     max-width: 300px;
     margin-left: auto;
+    display: inline-block;
 }
 
 body.contacts .messages .text .they {
