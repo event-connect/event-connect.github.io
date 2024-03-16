@@ -163,7 +163,7 @@ header #top-header nav {
     text-align: right;
 }
 
-#header-profil button {
+#header-profil * {
     letter-spacing: 1px;
     padding: 10px;
     color: black;
@@ -179,13 +179,14 @@ header #top-header nav {
     border: none;
     cursor: pointer;
     line-height: 10px;
+    margin-left: 20px;
 }
 
-#header-profil button:hover {
+#header-profil *:hover {
     color: white;
 }
 
-#header-profil button::before {
+#header-profil *::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     line-height: 10px;
@@ -194,6 +195,11 @@ header #top-header nav {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+#header-profil a:before {
+    content: "\f086";
+    font-size: 20px;
+}   
 
 
 header ul {
