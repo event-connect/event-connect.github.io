@@ -24,6 +24,17 @@
 } 
 
 @font-face {
+    font-family: firs;
+    src: url(fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Regular.ttf);
+}
+
+@font-face {
+    font-family: firs;
+    src: url(fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
     font-family: 'oui';
     src: url('fonts/oui.eot');
     src: url('fonts/oui.eot?#iefix') format('embedded-opentype'),
@@ -117,7 +128,7 @@ header #top-header nav {
 
 #top-header > * {
     flex: 1;
-    margin: 20px 10px;
+    margin: 20px 0px;
 }
 
 .main-title a {
@@ -2343,4 +2354,84 @@ body.contacts .partage {
     font-size: 10px;
     letter-spacing: 2px;
     text-align: center;
+}
+
+.offre-accueil {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    color: black;
+    background-image: url(imgs/offre.png);
+    width: 700px;
+    height: 250px;
+    text-align: center;
+    font-family: firs;
+    background-size: cover;
+}
+
+.offre-accueil .prix {
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 0;
+    /* line-height: 35px; */
+    margin-top: 30px;
+}
+
+.offre-accueil .mois {
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+.offre-accueil .type {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    padding: 10px 60px;
+    /* padding-bottom: 20px; */
+    /* box-sizing: content-box; */
+    /* width: 80%;
+    display: block; */
+}
+
+.offre-accueil .gauche {
+    position: absolute;
+    left: 115px;
+    top: 66px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+.offre-accueil .milieu {
+    position: absolute;
+    left: 50%;
+    top: 41px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+.offre-accueil .droite {
+    position: absolute;
+    right: 127px;
+    top: 66px;
+    color: white;
+    transform: translateX(50%);
+}
+
+.principal {
+    position: relative;
+    padding-bottom: 200px;
+    margin-bottom: 0;
+}
+
+#decouvrir {
+    position: absolute;
+    bottom: 50px;
+    right: calc(100% - 1200px);
+    /* left: 1000px; */
+}
+
+.principal .card-row {
+    margin: 0;
+    margin-bottom: 10px;
 }
