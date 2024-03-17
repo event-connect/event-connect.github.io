@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
     <script src="../main.js"></script>
-</head>
-<body class="event dark">
+    <link rel="icon" type="image/x-icon" href="/imgs/logo.png">
+
+</head><body class="event dark">
     <div id="foreground" onclick="close_sidebar()"></div>
     <header>
         <section id="top-header">
@@ -151,7 +152,7 @@
     </footer>
     <aside class="sidebar" id="achat">
         <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <form action="/event" method="get">
+        <form action="/payement" method="get">
             <select name="type-place" id="type-place" required>
                 <option value="" disabled selected hidden>Type de place</option>
                 <option value="assis">Assis</option>
