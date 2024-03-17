@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/1c2367d74a.js" crossorigin="anonymous"></script>
     <script src="../main.js"></script>
 </head>
-<body class="event dark">
+<body class="payement dark">
     <div id="foreground" onclick="close_sidebar()"></div>
     <header>
         <section id="top-header">
@@ -43,49 +43,23 @@
         
     </header>
     <main>
-        <div class="event-container">
+        <h1>Vérifier et payer</h1>
+        <div class="billet">
             <img src="../imgs/event.jpg" alt="">
-            <form class="content">
-                <h1>Olivia Rodrigo World Tour 2024</h1>
-                <fieldset>
-                    <legend>Sélectionner une date :</legend>
-                    <div class="dates-container">
-                        <div>
-                            <input type="checkbox" name="date1" id="date1">
-                            <label tabindex="0" for="date1">
-                                <div>
-                                    <p class="jour">Ven.</p>
-                                    <p class="numero">14</p>
-                                    <p class="mois-annee">Juin 2024</p>
-                                    <p class="ville">Paris</p>
-                                </div>
-                            </label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="date2" id="date2">
-                            <label tabindex="0" for="date2">
-                                <div>
-                                    <p class="jour">Sam.</p>
-                                    <p class="numero">15</p>
-                                    <p class="mois-annee">Juin 2024</p>
-                                    <p class="ville">Paris</p>
-                                </div>
-                                
-                            </label>
-                        </div>
-                    </div>
-                    
-                </fieldset>
-                <p class="localisation">Localisation : <i>Accor Arena à Paris</i></p>
-                <p class="prix">Prix : de 65,50€ à 122,50€</p>
-                <p class="description">
-                    Description : Olivia Rodrigo est de retour avec son « GUTS WORLD TOUR » ! Avec son nouvel album, elle va enflammer les scènes à travers le monde en 2024 ! Ne manquez pas cette expérience musicale unique ! 🎶
-                </p>
-                <div class="buy">
-                    <button type="button" onclick="open_sidebar(true)">Acheter un ticket</button>
-                </div>
-            </form>
+            <div>
+                <h2>Olivia Rodrigo - Paris</h2>
+                <p>1 billet pour le 15/06</p>
+            </div>
         </div>
+        <h3>Payer avec :</h3> 
+        <p class="moyen"><img src="../imgs/applepay.png" alt="">Apple Pay</p>
+        <p class="moyen"><img src="../imgs/visa.png" alt="">Carte bancaire</p>
+        <div class="total">
+            <p>Total</p>
+            <p>67,50€</p>
+        </div>
+        <button>Payer</button>
+        <p class="confirm">En confirmant votre commande, vous acceptez les conditions générales de EventConnect ainsi que la politique relative aux données personnelles</p>
     </main>
     <footer>
         <section class="top">
@@ -149,40 +123,7 @@
             </nav>
         </section>
     </footer>
-    <aside class="sidebar" id="achat">
-        <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
-        <form action="/event" method="get">
-            <select name="type-place" id="type-place" required>
-                <option value="" disabled selected hidden>Type de place</option>
-                <option value="assis">Assis</option>
-                <option value="debout">Debout</option>
-            </select>
-            <label for="nombre">Nombre d'articles :</label>
-            <div id="choix-nombre">
-                <input type="button" value="-" onclick="this.nextElementSibling.stepDown()">
-                <input type="number" name="nombre" id="nombre" value="1" min="1" required>
-                <input type="button" value="+" onclick="this.previousElementSibling.stepUp()">
-            </div>
-            <div class="prix">
-                <a><img src="../imgs/promo.png" alt="">Ajouter un code promotionnel</a>
-                <div>
-                    <p>Frais de service</p>
-                    <p>3,22€</p>
-                </div>
-                <div>
-                    <p>Prix de la place</p>
-                    <p>64,28€</p>
-                </div>
-                <div>
-                    <p><strong>Total</strong></p>
-                    <p><strong>67,50€</strong></p>
-                </div>
-            </div>
-            <input type="submit" value="Réserver">
-        </form>
 
-
-    </aside>
     <aside id="mon-profil" class="sidebar">
         <button class="back" onclick="close_sidebar()"><i class="fa-solid fa-angle-left fa-2x"></i> <span>Retour</span></button>
         <h1><img src="../imgs/photo.png" alt="Photo de profil">Mon profil</h1>

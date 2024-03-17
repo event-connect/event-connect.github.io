@@ -772,6 +772,7 @@ aside #forgot:hover {
     width: 300px;
     height: 400px;
     border-radius: 10px;
+    object-position: right;
 }
 
 .event form {
@@ -2115,4 +2116,231 @@ body.contacts .partage {
     font-size: 20px;
     cursor: pointer;
     margin-right: 5px;
+}
+
+.sidebar#achat {
+    height: 600px;
+    top: calc(50vh);
+    transform: translateY(-50%);
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+.sidebar#achat.enabled {
+    right: 10px;
+}
+
+.sidebar#achat .back {
+    margin-left: 30px;
+}
+
+.sidebar#achat form {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar#achat select {
+    font-family: Poppins;
+    font-size: 16px;
+    background-color: #9d9d9d;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border-right: 10px solid transparent;
+    display: inline-block;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.sidebar#achat label {
+    font-family: Poppins;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sidebar#achat input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.sidebar#achat input[type=number]::-webkit-inner-spin-button, 
+.sidebar#achat input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+#choix-nombre {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #dddddd;
+    font-size: 16px;
+    font-family: Poppins;
+    padding: 10px;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+#choix-nombre input {
+    width: 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-family: Poppins;
+    text-align: center;
+}
+
+#choix-nombre button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.sidebar#achat .prix {
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.sidebar#achat .prix a {
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #dddddd;
+    display: block;
+    margin: 30px;
+    font-family: Poppins;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.sidebar#achat .prix a img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.sidebar#achat .prix div {
+    box-sizing: border-box;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.sidebar#achat .prix div p {
+    margin: 5px 0;
+}
+
+.sidebar#achat .prix * {
+    text-align: left;
+}
+
+.sidebar#achat input[type="submit"] {
+    background-color: #f51cda;
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+.payement main .billet {
+    display: flex;
+    align-content: center;
+    background-color: #f51cda;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.payement main .billet img {
+    width: 50px;
+    height: 60px;
+    object-fit: cover;
+    margin: auto 0;
+    object-position: right;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.payement main .billet h2 {
+    margin: auto 0;
+    font-family: Ubuntu;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.payement main .billet p {
+    margin: auto 0;
+    font-family: Ubuntu;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.payement main h1 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.payement main h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: Ubuntu;
+}
+
+.payement main .moyen {
+    font-size: 15px;
+    font-family: Ubuntu;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}   
+
+.payement main .moyen img {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.payement main .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.payement main button {
+    display: block;
+    width: 100%;
+    background-color: #f51cda;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.payement main .confirm {
+    font-family: Ubuntu;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
 }

@@ -1,13 +1,25 @@
-function open_sidebar() {
-    document.getElementById("mon-profil").style.display = "block";
-    document.getElementById("foreground").className = "enabled";
-    var elements = document.getElementsByClassName("sidebar")
+function open_sidebar(achat = false) {
+    if (achat) {
+        document.getElementById("achat").style.display = "block";
+        document.getElementById("achat").classList.add("enabled");
+    }
+    else {
+        document.getElementById("mon-profil").style.display = "block";
+        var elements = document.getElementsByClassName("sidebar")
     for(var index=0;index < elements.length;index++){
         elements[index].classList.add("enabled");
     }
+    }
+    document.getElementById("foreground").className = "enabled";
+    
 }
-function close_sidebar() {
-    document.getElementById("mon-profil").style.display = "block";
+function close_sidebar(achat = false) {
+    if (achat) {
+        document.getElementById("achat").style.display = "block";
+    }
+    else {
+        document.getElementById("mon-profil").style.display = "block";
+    }
     document.getElementById("foreground").className = "";
     var elements = document.getElementsByClassName("sidebar")
     for(var index=0;index < elements.length;index++){
@@ -15,8 +27,13 @@ function close_sidebar() {
      }
 }
 
-function connect() {
-    document.getElementById("mon-profil").style.display = "none";
+function connect(achat = false) {
+    if (achat) {
+        document.getElementById("achat").style.display = "none";
+    }
+    else {
+        document.getElementById("mon-profil").style.display = "none";
+    }
 }
 
 
@@ -47,3 +64,4 @@ function select_messages() {
     match.style.display = "none"
     messages.style.display = "flex"
 }
+
