@@ -5,10 +5,7 @@ function open_sidebar(achat = false) {
     }
     else {
         document.getElementById("mon-profil").style.display = "block";
-        var elements = document.getElementsByClassName("sidebar")
-    for(var index=0;index < elements.length;index++){
-        elements[index].classList.add("enabled");
-    }
+        document.getElementById("mon-profil").classList.add("enabled");
     }
     document.getElementById("foreground").className = "enabled";
     
