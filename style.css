@@ -35,6 +35,11 @@
 }
 
 @font-face {
+    font-family: machina;
+    src: url(fonts/NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
     font-family: 'oui';
     src: url('fonts/oui.eot');
     src: url('fonts/oui.eot?#iefix') format('embedded-opentype'),
@@ -2434,4 +2439,111 @@ body.contacts .partage {
 .principal .card-row {
     margin: 0;
     margin-bottom: 10px;
+}
+
+.abonnement main {
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.abonnement .offre-accueil {
+    /* display: flex; */
+    position: relative;
+    height: 580px;
+    width: 800px;
+    background-size: contain;
+    background-repeat:   no-repeat;
+}
+
+.abonnement .offre-accueil .text {
+    width: 200px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+    /* margin-top: 30px; */
+}
+
+.abonnement .offre-accueil .text.principal {
+    font-size: 14px;
+    /* margin: auto; */
+    height: 260px;
+    padding: 0;
+}
+
+.abonnement .offre-accueil .text.secondaire {
+    font-size: 13px;
+    height: 210px;
+    opacity: 0.8;
+}
+
+.abonnement .offre-accueil .gauche {
+    left: 130px;
+}
+
+.abonnement .offre-accueil .droite {
+    right: 145px;
+}
+
+.abonnement main h2 {
+    font-family: machina;
+    font-size: 42px;
+    font-weight: bold;
+    color: #ef43cf;
+    letter-spacing: 1px;
+}
+
+.abonnement .oui {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.abonnement .oui p {
+    font-family: firs;
+    font-size: 15px;
+    color: white;
+}
+
+.abonnement .non {
+    flex: 4;
+}
+
+.bill {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.bill::before {
+    content: "";
+    background-image: url(imgs/pill.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.abonnement .oui img {
+    width: 230px;
+    margin-left: 20px;
+}
+
+.abonnement .non {
+    position: relative;
+}
+
+.abonnement .non::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-image: url(imgs/orange.png);
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: -1;
 }
