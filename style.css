@@ -2460,9 +2460,9 @@ body.contacts .partage {
 .abonnement .offre-accueil {
     /* display: flex; */
     position: relative;
-    height: 580px;
-    width: 800px;
-    background-size: contain;
+    height: 645px;
+    width: 875px;
+    background-size: cover;
     background-repeat:   no-repeat;
 }
 
@@ -2588,4 +2588,23 @@ body.light .breadcrumb a:not(:last-child)::after{
 
 .card.favorite::before {
     color: #f51cda;
+}
+
+.abonnement .offre-accueil button {
+    background: none;
+        background-color: rgba(0, 0, 0, 0);
+      border: none;
+      color: white;
+      background-color: #3848f1;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-family: firs;
+      font-size: 15px;
+      margin: 15px;
+      cursor: pointer;
+}
+
+.abonnement .offre-accueil .milieu button {
+    background-color: #ef43cf;
+    font-size: 16px;
 }
