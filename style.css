@@ -1750,6 +1750,7 @@ body.contacts .details .profil-card .likes img:first-child {
 
 body.contacts .messages {
     display: flex;
+    margin-top: 90px;
 }
 
 body.contacts .messages section {
