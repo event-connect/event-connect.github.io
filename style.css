@@ -2566,3 +2566,26 @@ body.contacts .partage {
 body.light .breadcrumb a:not(:last-child)::after{
     color: black;
 }
+
+.card {
+    position: relative;
+}
+
+.card::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    line-height: 10px;
+    font-size: 22px;
+    content: "\f004";
+    vertical-align: middle;
+    margin-right: 5px;    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: white;
+    -webkit-text-stroke: 2px #f51cda;
+    /* border: 5px solid #f51cda; */
+}
+
+.card.favorite::before {
+    color: #f51cda;
+}
