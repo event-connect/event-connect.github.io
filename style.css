@@ -2443,9 +2443,10 @@ body.contacts .partage {
 
 .abonnement main {
     display: flex;
-    margin: 50px auto;
+    margin: 0 auto;
     justify-content: space-between;
     max-width: 1200px;
+    margin-bottom: 50px;
 }
 
 .abonnement .offre-accueil {
@@ -2455,6 +2456,10 @@ body.contacts .partage {
     width: 800px;
     background-size: contain;
     background-repeat:   no-repeat;
+}
+
+.abonnement .offre-accueil .mois {
+    font-size: 11px;
 }
 
 .abonnement .offre-accueil .text {
@@ -2497,7 +2502,8 @@ body.contacts .partage {
 
 .abonnement .oui {
     flex: 1;
-    margin-top: 50px;
+    margin-top: 100px;
+
 }
 
 .abonnement .oui p {
@@ -2534,6 +2540,7 @@ body.contacts .partage {
 
 .abonnement .non {
     position: relative;
+    margin-top: 50px;
 }
 
 .abonnement .non::after {
