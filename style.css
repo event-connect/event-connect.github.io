@@ -2562,3 +2562,7 @@ body.contacts .partage {
     bottom: 20px;
     z-index: -1;
 }
+
+body.light .breadcrumb a:not(:last-child)::after{
+    color: black;
+}
